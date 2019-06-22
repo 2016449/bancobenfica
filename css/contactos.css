@@ -1,0 +1,590 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+		font-size: 100%;
+}		
+
+body {
+  background-color:#ffffff;
+	font-family: 'Libre Franklin', 'Heebo', Arial, Helvetica, sans-serif;
+	margin: 0px;
+	max-width: 100%;
+	/*border:solid;
+	border-color:#FFFFFF;*/
+	font-size: 100%;
+	}
+	
+
+h1 {
+	font-family: 'Heebo';
+	font-size: 2rem;
+	margin: 0px;
+}
+h2 {
+	font-family: 'Heebo';
+	font-size: 2.5rem;
+	margin: 0px;
+	text-align: center;
+	color: #1a1a1a;
+}
+h3 {
+	   font-family: 'Libre Franklin';
+	   margin: 0px;
+       text-align:center;
+       color: black;
+       font-size: 0.9rem;
+}
+
+h5 {
+	font-family: 'libre Franklin';
+	font-size: 0.9rem;
+	margin: 0px;
+	margin-top: 10px;
+}
+
+section {
+display: block;
+width: 100%;
+margin-left: 50px;
+padding: 0px;
+margin-top: 23px;
+
+}
+
+
+section src {
+display: left;
+width: 100%;
+}
+
+section type {
+display: left;
+width: 100%;
+margin-left: 250px;
+
+}
+
+img {
+  float: left;
+ }
+
+#search {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+
+}
+
+
+#imgsrc {
+    
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  padding: 15px 15px;
+  padding-top: 25px;
+  background-color: #A8C5C7;
+  font-size: 12px;
+  
+}
+
+
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px;
+  border-left: 0px solid #ffffff;
+  text-decoration: none;
+  
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  padding: 15px 15px;
+  color: black;
+  
+  
+
+}
+
+.topnav input[type=text] {
+  float: none;
+  padding: 6px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border: none;
+  font-size: 12px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.row  { 
+height: 100%;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 20%;
+  height: 710px;
+  background-color: #9BB7B9;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 80%;
+  background-color: #ffffff;
+  padding-left: 0px;
+  
+}
+
+/*.leftcolumn:after {   
+  height: inherit;
+}*/
+
+div.gallery {
+  border: 0px solid #ccc;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 32%;
+}
+
+
+.card_left {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.card_left h2 {
+	font-family: 'Heebo';
+	font-size: 1.1rem;
+	margin: 0px;
+	text-align: left;
+	color: #1a1a1a;
+}	
+
+.card_left h3 {
+	font-family: 'Libre Franklin';
+	margin: 0px;
+    text-align: left;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.card_left h4 {
+	font-family: 'Libre Franklin';
+	margin: 0px;
+    text-align: left;
+    color: black;
+    font-size: 0.6rem;
+}
+
+.card_left button {
+	font-family: 'Libre Franklin';
+	margin: 0px;
+    text-align: center;
+    color: black;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+.leftright {
+	margin-top: -65px;
+	text-align: right;
+	
+	
+	 }
+	
+
+a {
+  text-decoration: none;
+  
+}
+
+a:hover {
+   color: white;
+}
+
+.previous_round {
+ font-size: 50px;
+  color: black;
+}
+
+.next_round {
+  font-size: 50px;
+  color: black;
+}
+
+
+
+
+
+#contactos {
+
+}
+#cliente {
+
+}
+#desafios    {
+
+}
+#divulga    {
+
+}
+#inicio    {
+
+}
+
+#tabletPC {
+    display: none;
+}
+
+/*menu */
+svg {
+    width: 40px;
+}
+
+#menu_icon {
+    display: block;
+    cursor: pointer;
+    padding: 0px;
+    position: absolute;
+	top: 7px;
+    left: 15px;
+	max-width: 50px;
+	
+   
+}
+
+
+#drawer {
+    display: block;
+    background-color: #9BB1B0;
+    height: 180px;
+    width: 40%;
+    position: absolute;
+    transition: all 0.2s linear;
+    transform: translateX(-112%);
+    top: 45px;
+    border-radius: 5px;
+    opacity: 0.95;
+	z-index: 1000;
+}
+
+#drawer.open {
+	transform: translateX(0);
+
+}
+.imagewrapper {
+clear: both;
+position: relative;
+padding-bottom: 65%;
+height: 0; 
+}
+
+.imagewrapper img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
+}
+
+{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  /*transition: 0.6s ease;*/
+  border-radius: 3px;
+  /*user-select: none;*/
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0%;
+  border-radius: 3px;
+}
+
+.prev {
+  left: 0%;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Footer */
+
+
+footer {
+clear: both;
+display: block;
+background-color: #707079;
+color:#ffffff;
+text-align:left;
+padding: 20px;
+
+}
+
+
+
+footer h5 {
+font-size: 0.8rem;
+text-align: left;
+color: #ffffff;
+
+}
+
+section img {
+ margin-left: 50px;
+ margin-top: -55px;
+
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+  
+  
+  .topnav a, .topnav input[type=text] {
+    float: none;
+	display: block;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+	position: relative;
+	left: -133px;
+	top: 15px;
+	width: 100%;
+
+
+  }
+   
+    .topnav search {
+	float: left;
+
+  }
+   
+   .topnav img {
+	float: right;
+
+  }
+ 
+.footer h5 {
+	font-size: 0.8rem;
+
+  }
+ 
+}
+
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .responsive {
+    width: 100%;
+  }
+   
+ .leftcolumn {
+    height: 100%;
+  }
+ 
+ .footer section {
+	margin-left: 0px;
+	margin-bottom: 35px;
+  }
+   
+.previous_round {
+  font-size: 200%;
+  color: black;
+  
+}
+
+.next_round {
+  font-size: 200%;
+  color: black;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  header h2 {
+        display: block;
+    }
+
+    #menu_icon {
+        display: none;
+				}
+
+    #drawer {
+        display: none;
+    }
+
+    #tabletPC {
+        display: block;
+    }
+	
+	.imagewrapper img {
+	 display: block;
+	 margin: 5%;
+	 width: 80%;
+	 height: 80%;
+	 
+	 
+	}
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
