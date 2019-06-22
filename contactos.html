@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<title>Banco de Benfica</title>
+<meta name="description" content="HTML tutorial">
+<meta name="keywords"
+content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Gui e JMS">
+<meta http-equiv="refresh" content="30">
+<meta charset="UTF-8">
+<style>
+		@import url('https://fonts.googleapis.com/css?family=Heebo|Libre+Franklin');
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/contactos.css">
+</style>
+</head>
+
+
+<body>
+	
+
+
+<div class="topnav">
+
+
+	<a id="menu_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+        </svg>
+    </a>
+	
+	
+	 <div id="drawer">
+        
+		<nav>
+        
+		
+		<a href="index.html" id="inicio"> INÍCIO</a>
+		<a href="divulga.html" id="divulga"> DIVULGAÇÃO</a>
+		<a href="desafios.html" id="desafios"> DESAFIOS</a>
+		<a href="cliente.html" id="cliente"> CLIENTE</a>
+		<a href="contactos.html" id="contactos"> CONTACTOS</a>
+		
+        </nav>
+		
+    </div>
+
+  <div id="imgsrc">
+  
+		<img src="imagens/ddmp.png" alt="Distributed Design Marketing Platform" style="width:100px; margin-top:-10px;">
+	  
+   </div>
+
+	<div id="search">
+	
+		<input type="text" placeholder="Pesquisa..">
+  
+	</div>
+  
+  
+  
+	<nav id="tabletPC" class="col-3">
+
+		<a href="contactos.html" style="float:right">CONTACTOS</a></li>
+		<a href="cliente.html" style="float:right">CLIENTE</a></li>
+		<a href="desafios.html" style="float:right">DESAFIOS</a></li>
+		<a href="divulga.html" style="float:right">DIVULGAÇÃO</a></li>
+		<a href="index.html" style="float:right">INÍCIO</a></li>
+	</nav>
+
+</div>
+
+
+
+<div class="row" >
+
+  <div class="leftcolumn">
+  
+  
+
+  
+    <div class="card_left">
+      <h2>FABLAB BENFICA</h2><p>
+      <h3>Tel.: 217 715 500<br>
+	  fablabenfica@eselx.ipl.pt<br>
+	  fablabenfica.eselx.ipl.pt</h3><p>
+<br>
+	<button align="center" onclick="myFunction()">Google maps</button>
+	
+</div>
+
+<hr>
+<div class="card_left">
+<h2>FABLAB LISBOA</h2><p>
+      <h3>Tel.: 000000000<br>
+	  fablablisboa@eselx.ipl.pt<br>
+	  fablab.eselx.ipl.pt<p></h3>
+<br>
+	<button align="center" onclick="myFunction2()">Google maps</button>
+
+    </div>
+</div>
+
+
+ <div class="rightcolumn">
+    
+	<div class="imagewrapper">
+	
+<img src="imagens/eselx.jpg" alt="eselx" width="688" height="480">
+
+    </div>  
+</div>
+
+
+
+<div class="clearfix"></div>
+
+    
+    </div>
+
+
+
+
+<footer>
+		
+	<div class="footer">
+	
+	
+		
+		<h5>APOIOS</h5>
+	
+		<section>
+		
+			<img src="imagens/cee.png" alt="CEE" width="200">
+		
+		</section>
+		
+
+		<div class="leftright">
+			<a href="cliente.html" class="previous_round">&#8249;</a>
+			<!--<a href="#" class="next_round">&#8250;</a>-->
+		</div>	
+		
+		
+
+</div>	
+
+</footer>
+
+<script>
+	
+		
+		var menu_icon = document.querySelector('#menu_icon');
+    var container = document.querySelector("#container");
+    var drawer = document.querySelector('#drawer');
+    menu_icon.addEventListener('click', function (e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+    });
+    container.addEventListener('click', function () {
+        drawer.classList.remove('open');
+    });
+
+	</script>
+	
+	<script>
+function myFunction() {
+  window.open("https://www.google.com/maps/place/FabLab+Benfica/@38.7462583,-9.1980219,17z/data=!3m1!4b1!4m5!3m4!1s0xd1eccd6a3f082df:0xd7b96bd39665af1b!8m2!3d38.7462583!4d-9.1958332?hl=pt-PT");
+}
+
+function myFunction2() {
+  window.open("https://www.google.com/maps/place/Fab+Lab+Lisboa/@38.721943,-9.1342057,17z/data=!3m1!4b1!4m5!3m4!1s0xd19338fabbc0239:0x8d12a76130ae4800!8m2!3d38.721943!4d-9.132017?hl=pt-PT");
+}
+
+</script>
+	
+</body>
+
+
+
+
+
+
+
+</html>
